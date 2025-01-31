@@ -16,8 +16,8 @@ A Python utility for exporting Miro boards via official Miro REST API with autom
 
 ## Installation
 ```
-git clone https://github.com/niksavis/miro-board-export.git
-cd miro-board-export
+git clone https://github.com/niksavis/miro-export
+cd miro-export
 pip install -r requirements.txt
 ```
 

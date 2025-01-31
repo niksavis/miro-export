@@ -1,6 +1,6 @@
 # Miro Board Export Tool
 
-A Python utility for exporting Miro boards via official Mir REST API with automated job handling and error reporting.
+A Python utility for exporting Miro boards via official Miro REST API with automated job handling and error reporting.
 
 [![python](https://img.shields.io/badge/Python-3.13-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -28,19 +28,14 @@ pip install -r requirements.txt
 python miro_export.py --access-token YOUR_TOKEN --org-id YOUR_ORG_ID --board-ids "board1"
 ```
 
-### Full Options
-```
-python miro_export.py -t YOUR_TOKEN -g YOUR_ORG_ID -b "board1" "board2" -f PDF -o ./exports
-```
-
 ### Command Line Options
-| Option            | Alias | Description                          | Default     |
-| ----------------- | ----- | ------------------------------------ | ----------- |
-| `--access-token`  | `-t`  | Miro API access token (required)     |             |
-| `--org-id`        | `-g`  | Organization ID (required)           |             |
-| `--board-ids`     | `-b`  | Space-separated board IDs (required) |             |
-| `--board-format`  | `-f`  | Export format: SVG/HTML/PDF          | SVG         |
-| `--output-folder` | `-o`  | Output directory                     | `./archive` |
+| Option            | Alias | Description                          | Default   |
+| ----------------- | ----- | ------------------------------------ | --------- |
+| `--access-token`  | `-t`  | Miro API access token (required)     |           |
+| `--org-id`        | `-g`  | Organization ID (required)           |           |
+| `--board-ids`     | `-b`  | Space-separated board IDs (required) |           |
+| `--board-format`  | `-f`  | Export format: SVG/HTML/PDF          | SVG       |
+| `--output-folder` | `-o`  | Output directory                     | ./archive |
 
 
 ## Error Handling

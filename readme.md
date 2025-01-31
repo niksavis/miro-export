@@ -83,14 +83,6 @@ pytest test_miro_export.py -v
 
 Read the [Miro developers reference](https://developers.miro.com/reference/board-export) for more information.
 
-## Contributing
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/improvement`)
-3. Commit changes (`git commit -am 'Add new feature'`)
-4. Push to branch (`git push origin feature/improvement`)
-5. Create new Pull Request
-
 ## License
 
 This repository is licensed under the [MIT License](LICENSE)

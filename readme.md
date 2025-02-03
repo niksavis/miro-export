@@ -15,7 +15,8 @@ A Python utility for exporting Miro boards via official Miro REST API with autom
 - 🧪 Full test coverage with pytest
 
 ## Installation
-```
+
+```text
 1. Install Python 3.13+
 2. Clone the repository: git clone https://github.com/niksavis/miro-export
 3. Navigate to the repository (via terminal): cd miro-export
@@ -25,11 +26,13 @@ A Python utility for exporting Miro boards via official Miro REST API with autom
 ## Usage
 
 ### Basic Command
-```
+
+```text
 python miro_export.py --access-token YOUR_TOKEN --org-id YOUR_ORG_ID --board-ids "board1"
 ```
 
 ### Command Line Options
+
 | Option            | Alias | Description                          | Default   |
 | ----------------- | ----- | ------------------------------------ | --------- |
 | `--access-token`  | `-t`  | Miro API access token (required)     |           |
@@ -37,7 +40,6 @@ python miro_export.py --access-token YOUR_TOKEN --org-id YOUR_ORG_ID --board-ids
 | `--board-ids`     | `-b`  | Space-separated board IDs (required) |           |
 | `--board-format`  | `-f`  | Export format: SVG/HTML/PDF          | SVG       |
 | `--output-folder` | `-o`  | Output directory                     | ./archive |
-
 
 ## Error Handling
 
@@ -52,6 +54,7 @@ The script handles all API error responses with detailed logging:
 | 429       | tooManyRequests   | Implement retry logic       |
 
 Example error output:
+
 ```json
 {
     "status": 400,
@@ -72,7 +75,8 @@ Example error output:
 ## Testing
 
 Run the test suite with:
-```
+
+```text
 pytest test_miro_export.py -v
 ```
 
